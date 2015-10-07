@@ -1,11 +1,16 @@
 {application, erld, [
-	{description, "Erlang UNIX daemon wrapper."},
-	{vsn, "1.0.0"},
-	{modules, []},
-	{registered, []},
-	{applications, [
-		kernel,
-		stdlib
-	]},
-	{env, []}
+    {description, "Erlang UNIX daemon wrapper."},
+    {vsn, "1.0.0"},
+    {modules, [
+        erld,
+        erld_app,
+        erld_heartbeat,
+        erld_remote
+    ]},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, []}
 ]}.
